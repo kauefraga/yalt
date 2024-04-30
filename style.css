@@ -51,7 +51,7 @@ main ul {
 main ul li a {
     display: flex;
     justify-content: center;
-    padding: 6px 32px;
+    padding: 12px 32px;
     border-radius: 4px;
     text-decoration: none;
     background-color: var(--list-item-bg-color);
@@ -71,4 +71,14 @@ footer ul {
     list-style: none;
     padding: 0;
     gap: 16px;
+}
+
+@media (max-width: 768px) {
+    header div h1 {
+        font-size: 26px;
+    }
+
+    main ul li a {
+        padding: 12px 16px;
+    }
 }

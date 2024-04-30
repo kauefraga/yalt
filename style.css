@@ -1,9 +1,17 @@
+:root {
+    --list-item-bg-color: #e0e1dd;
+    --list-item-bg-color-hover: #354f52;
+    --foreground-color: #282828;
+    --accent-color: #84a98c;
+}
+
 body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #282828;
+    font-family: 'Onest', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--foreground-color);
 }
 
 header {
@@ -28,6 +36,10 @@ header div p, header div h1 {
     margin: 0;
 }
 
+header div p {
+    font-size: 18px;
+}
+
 main ul {
     display: flex;
     flex-direction: column;
@@ -41,16 +53,17 @@ main ul li a {
     justify-content: center;
     padding: 6px 32px;
     border-radius: 4px;
-    background-color: #fbf1c7;
-    color: #076678;
+    text-decoration: none;
+    background-color: var(--list-item-bg-color);
+    color: var(--foreground-color);
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 }
 
 main ul li a:hover {
-    background-color: #ebdbb2;
-    color: #458588;
+    background-color: var(--list-item-bg-color-hover);
+    color: whitesmoke;
 }
 
 footer ul {
